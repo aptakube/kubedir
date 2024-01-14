@@ -15,6 +15,7 @@
       "private-cluster": "✅"
     },
     "issue": 2,
+    "alternatives": [],
     "reviews": [],
     "reactions": []
   },
@@ -32,10 +33,7 @@
       "aggregated-logs": "✅",
       "open-source": "❌"
     },
-    "alternatives": [
-      "k9s",
-      "lens"
-    ],
+    "alternatives": [],
     "issue": 3,
     "reviews": [],
     "reactions": []
@@ -56,6 +54,7 @@
       "private-cluster": "❌"
     },
     "issue": 4,
+    "alternatives": [],
     "reviews": [],
     "reactions": []
   },
@@ -75,6 +74,7 @@
       "private-cluster": "✅"
     },
     "issue": 5,
+    "alternatives": [],
     "reviews": [],
     "reactions": []
   },
@@ -94,6 +94,7 @@
       "private-cluster": "✅"
     },
     "issue": 6,
+    "alternatives": [],
     "reviews": [],
     "reactions": []
   },
@@ -117,6 +118,7 @@
       "license": "AGPL-3.0"
     },
     "issue": 7,
+    "alternatives": [],
     "reviews": [],
     "reactions": []
   },
@@ -151,10 +153,7 @@
         "src": "https://grafana.com/static/img/traces/how-does-tempo-work.png"
       }
     ],
-    "alternatives": [
-      "signoz",
-      "jaeger"
-    ],
+    "alternatives": [],
     "issue": 1,
     "reviews": [
       {
@@ -201,10 +200,7 @@
       "observability-metrics": "❌",
       "license": "Apache-2.0"
     },
-    "alternatives": [
-      "signoz",
-      "grafanatempo"
-    ],
+    "alternatives": [],
     "issue": 8,
     "reviews": [],
     "reactions": []
@@ -224,6 +220,7 @@
       "open-source": "✅"
     },
     "issue": 9,
+    "alternatives": [],
     "reviews": [],
     "reactions": []
   },
@@ -241,10 +238,7 @@
       "aggregated-logs": "❌",
       "open-source": "❌"
     },
-    "alternatives": [
-      "k9s",
-      "aptakube"
-    ],
+    "alternatives": [],
     "issue": 10,
     "reviews": [],
     "reactions": []
@@ -267,10 +261,7 @@
       "observability-metrics": "✅",
       "license": "MIT + Enterprise"
     },
-    "alternatives": [
-      "jaeger",
-      "grafanatempo"
-    ],
+    "alternatives": [],
     "issue": 11,
     "reviews": [],
     "reactions": []

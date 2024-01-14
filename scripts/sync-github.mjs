@@ -97,6 +97,7 @@ Upvotes and reviews may take up to 1 hour before showing up on [kubedir.com](htt
   }
 
   project.issue = issue.number;
+  project.alternatives = issue.alternatives || [];
   project.reviews = await getReviews(issue.number);
   project.reactions = await getReactions(issue.number);
 
