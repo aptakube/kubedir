@@ -18,7 +18,7 @@ export function listProjects() {
 export async function gitHubRequest(path) {
   const response = await fetch(`https://api.github.com${path}`, {
     headers: {
-      Authorization: `Bearer ${env("GITHUB_PAT")}`,
+      Authorization: `Bearer ${env("GITHUB_TOKEN")}`,
     },
   });
 
