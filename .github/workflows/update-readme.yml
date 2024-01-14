@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  sync:
+  update-readme:
     runs-on: ubuntu-latest
 
     steps:
@@ -20,11 +20,7 @@ jobs:
 
     - run: node scripts/update-readme.mjs
 
-    - name: Commit and push changes
-      run: |
-        git config --global user.email "actions@github.com"
-        git config --global user.name "GitHub Actions (bot)"
-        
-        git add .
-        git commit -m "Update README.md"
-        git push
+    - name: Commit & Push changes
+      uses: actions-js/push@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
