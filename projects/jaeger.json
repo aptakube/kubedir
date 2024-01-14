@@ -7,7 +7,7 @@
   "features": {
     "initial-release": "Aug '15",
     "cncf-stage": "Graduated",
-    "builtin-ui": "✅",
+    "builtin-ui": "❌",
     "supports-otel": "✅",
     "backend-storage": "In-Memory, Cassandra, Elasticsearch or Kafka",
     "observability-traces": "✅",
