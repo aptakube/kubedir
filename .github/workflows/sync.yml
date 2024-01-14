@@ -1,0 +1,32 @@
+name: Hourly Sync
+
+on:
+  schedule:
+    - cron: '0 * * * *' # Run every hour
+  workflow_dispatch:
+    inputs:
+      manual_run:
+        description: 'Manually trigger the workflow'
+        default: 'false'
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '20'
+
+    - name: Execute sync script
+      run: node scripts/sync-github.mjs
+
+    - name: Commit and push changes
+      run: |
+        git add .
+        git commit -m "Automated sync at $(date -u +'%Y-%m-%dT%H:%M:%SZ')"
+        git push
