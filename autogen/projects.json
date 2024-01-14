@@ -1,0 +1,278 @@
+[
+  {
+    "id": "aks",
+    "shortname": "AKS",
+    "name": "Azure Kubernetes Service",
+    "tagline": "Deploy and scale containers on managed Kubernetes by Microsoft",
+    "url": "https://azure.microsoft.com/en-us/services/kubernetes-service",
+    "logo": "https://swimburger.net/media/ppnn3pcl/azure.png",
+    "category": "managed-kubernetes",
+    "features": {
+      "initial-release": "Jun '18",
+      "max-pods-per-node": "250",
+      "free-control-plane": "✅",
+      "control-plane-sla": "99.95%",
+      "private-cluster": "✅"
+    },
+    "issue": 2,
+    "reviews": [],
+    "reactions": []
+  },
+  {
+    "id": "aptakube",
+    "name": "Aptakube",
+    "tagline": "Modern, lightweight and multi-cluster Kubernetes GUI",
+    "url": "https://aptakube.com",
+    "logo": "https://aptakube.com/apple-touch-icon.png",
+    "category": "desktop-clients",
+    "features": {
+      "interface": "Graphical",
+      "multi-cluster": "✅",
+      "port-foward": "✅",
+      "aggregated-logs": "✅",
+      "open-source": "❌"
+    },
+    "alternatives": [
+      "k9s",
+      "lens"
+    ],
+    "issue": 3,
+    "reviews": [],
+    "reactions": []
+  },
+  {
+    "id": "doks",
+    "shortname": "DOKS",
+    "name": "Digital Ocean Kubernetes",
+    "tagline": "Kubernetes at scale managed for you",
+    "url": "https://www.digitalocean.com/products/kubernetes",
+    "logo": "https://static-00.iconduck.com/assets.00/digitalocean-icon-512x512-1t8a5xew.png",
+    "category": "managed-kubernetes",
+    "features": {
+      "initial-release": "Dec '18",
+      "max-pods-per-node": "110",
+      "free-control-plane": "✅",
+      "control-plane-sla": "99.95%",
+      "private-cluster": "❌"
+    },
+    "issue": 4,
+    "reviews": [],
+    "reactions": []
+  },
+  {
+    "id": "eks",
+    "shortname": "EKS",
+    "name": "Elastic Kubernetes Service",
+    "tagline": "The most trusted way to start, run, and scale Kubernetes",
+    "url": "https://aws.amazon.com/eks",
+    "logo": "https://seeklogo.com/images/A/amazon-web-services-aws-logo-6C2E3DCD3E-seeklogo.com.png",
+    "category": "managed-kubernetes",
+    "features": {
+      "initial-release": "Jun '18",
+      "max-pods-per-node": "110",
+      "free-control-plane": "❌",
+      "control-plane-sla": "99.95%",
+      "private-cluster": "✅"
+    },
+    "issue": 5,
+    "reviews": [],
+    "reactions": []
+  },
+  {
+    "id": "gke",
+    "shortname": "GKE",
+    "name": "Google Kubernetes Engine",
+    "tagline": "The most scalable and fully automated Kubernetes service",
+    "url": "https://cloud.google.com/kubernetes-engine",
+    "logo": "https://seeklogo.com/images/G/google-cloud-logo-ADE788217F-seeklogo.com.png",
+    "category": "managed-kubernetes",
+    "features": {
+      "initial-release": "Nov '15",
+      "max-pods-per-node": "110",
+      "free-control-plane": "✅",
+      "control-plane-sla": "99.95%",
+      "private-cluster": "✅"
+    },
+    "issue": 6,
+    "reviews": [],
+    "reactions": []
+  },
+  {
+    "id": "grafanaloki",
+    "name": "Grafana Loki",
+    "tagline": "Like Prometheus, but for logs",
+    "url": "https://grafana.com/oss/loki",
+    "logo": "https://grafana.com/static/img/logos/logo-loki.svg",
+    "category": "observability",
+    "features": {
+      "builtin-ui": {
+        "value": "❌",
+        "note": "Requires Grafana"
+      },
+      "supports-otel": "✅",
+      "observability-traces": "❌",
+      "observability-logs": "✅",
+      "observability-metrics": "❌",
+      "backend-storage": "S3, GCS or Azure Blob Storage",
+      "license": "AGPL-3.0"
+    },
+    "issue": 7,
+    "reviews": [],
+    "reactions": []
+  },
+  {
+    "id": "grafanatempo",
+    "name": "Grafana Tempo",
+    "tagline": "High volume, minimal dependency distributed tracing backend",
+    "url": "https://grafana.com/oss/tempo",
+    "logo": "https://grafana.com/static/assets/img/logos/grafana-tempo.svg",
+    "category": "observability",
+    "features": {
+      "initial-release": "Jun '21",
+      "cncf-stage": "—",
+      "builtin-ui": {
+        "value": "❌",
+        "note": "Requires Grafana"
+      },
+      "supports-otel": "✅",
+      "observability-traces": "✅",
+      "observability-logs": "❌",
+      "observability-metrics": "❌",
+      "backend-storage": "S3, GCS or Azure Blob Storage",
+      "license": "AGPL-3.0"
+    },
+    "images": [
+      {
+        "alt": "Traces - Service Graph View using Grafana",
+        "src": "https://raw.githubusercontent.com/grafana/tempo/main/docs/sources/tempo/getting-started/assets/grafana-query.png"
+      },
+      {
+        "alt": "How does Tempo work?",
+        "src": "https://grafana.com/static/img/traces/how-does-tempo-work.png"
+      }
+    ],
+    "alternatives": [
+      "signoz",
+      "jaeger"
+    ],
+    "issue": 1,
+    "reviews": [
+      {
+        "login": "goenning",
+        "avatar_url": "https://avatars.githubusercontent.com/u/94755?v=4",
+        "html_url": "https://github.com/aptakube/kubedir/issues/1#issuecomment-1888238084",
+        "rating": 3,
+        "body": "Very good, I love this service!\r\nI have used it for many years.",
+        "created_at": "2024-01-12T01:15:25Z"
+      },
+      {
+        "login": "goenning",
+        "avatar_url": "https://avatars.githubusercontent.com/u/94755?v=4",
+        "html_url": "https://github.com/aptakube/kubedir/issues/1#issuecomment-1888820978",
+        "rating": 4,
+        "body": "Excelent!",
+        "created_at": "2024-01-12T10:19:44Z"
+      }
+    ],
+    "reactions": [
+      {
+        "login": "goenning",
+        "content": "+1",
+        "avatar_url": "https://avatars.githubusercontent.com/u/94755?v=4",
+        "created_at": "2024-01-12T00:49:59Z"
+      }
+    ]
+  },
+  {
+    "id": "jaeger",
+    "name": "Jaeger",
+    "tagline": "CNCF Jaeger, a Distributed Tracing Platform",
+    "url": "https://www.jaegertracing.io",
+    "logo": "https://avatars.githubusercontent.com/u/28545596?s=200&v=4",
+    "category": "observability",
+    "features": {
+      "initial-release": "Aug '15",
+      "cncf-stage": "Graduated",
+      "builtin-ui": "✅",
+      "supports-otel": "✅",
+      "backend-storage": "In-Memory, Cassandra, Elasticsearch or Kafka",
+      "observability-traces": "✅",
+      "observability-logs": "❌",
+      "observability-metrics": "❌",
+      "license": "Apache-2.0"
+    },
+    "alternatives": [
+      "signoz",
+      "grafanatempo"
+    ],
+    "issue": 8,
+    "reviews": [],
+    "reactions": []
+  },
+  {
+    "id": "k9s",
+    "name": "k9s",
+    "tagline": "Kubernetes CLI To Manage Your Clusters In Style!",
+    "url": "https://github.com/derailed/k9s",
+    "logo": "https://raw.githubusercontent.com/derailed/k9s/master/assets/k9s.png",
+    "category": "desktop-clients",
+    "features": {
+      "interface": "Terminal",
+      "multi-cluster": "❌",
+      "port-foward": "✅",
+      "aggregated-logs": "✅",
+      "open-source": "✅"
+    },
+    "issue": 9,
+    "reviews": [],
+    "reactions": []
+  },
+  {
+    "id": "lens",
+    "name": "Lens",
+    "tagline": "The way the world runs Kubernetes",
+    "url": "https://k8slens.dev",
+    "logo": "https://avatars.githubusercontent.com/u/62133242?s=200&v=4",
+    "category": "desktop-clients",
+    "features": {
+      "interface": "Graphical",
+      "multi-cluster": "❌",
+      "port-foward": "✅",
+      "aggregated-logs": "❌",
+      "open-source": "❌"
+    },
+    "alternatives": [
+      "k9s",
+      "aptakube"
+    ],
+    "issue": 10,
+    "reviews": [],
+    "reactions": []
+  },
+  {
+    "id": "signoz",
+    "name": "SigNoz",
+    "tagline": "OpenTelemetry-Native Traces, Metrics, and Logs in a single pane",
+    "url": "https://signoz.io",
+    "logo": "https://signoz.io/img/SigNozLogo-orange.svg",
+    "category": "observability",
+    "features": {
+      "initial-release": "Feb '21",
+      "cncf-stage": "Incubated",
+      "builtin-ui": "✅",
+      "supports-otel": "✅",
+      "backend-storage": "ClickHouse",
+      "observability-traces": "✅",
+      "observability-logs": "✅",
+      "observability-metrics": "✅",
+      "license": "MIT + Enterprise"
+    },
+    "alternatives": [
+      "jaeger",
+      "grafanatempo"
+    ],
+    "issue": 11,
+    "reviews": [],
+    "reactions": []
+  }
+]

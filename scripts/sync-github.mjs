@@ -1,5 +1,5 @@
 import { gitHubRequest, listProjects } from "./utils.mjs";
-import { writeFileSync } from "fs";
+import { copyFileSync, writeFileSync } from "fs";
 
 async function listIssues() {
   const issues = await gitHubRequest(
@@ -96,22 +96,15 @@ Upvotes and reviews may take up to 1 hour before showing up on [kubedir.com](htt
     console.log(`✅ Created issue #${issue.number}`);
   }
 
-  const reviews = await getReviews(issue.number);
-  const reactions = await getReactions(issue.number);
-  console.log(`⭐️ Found ${reviews.length} reviews.`);
-  console.log(`👍 Found ${reactions.length} reactions.`);
-  console.log(``);
+  project.issue = issue.number;
+  project.reviews = await getReviews(issue.number);
+  project.reactions = await getReactions(issue.number);
 
-  writeFileSync(
-    `./autogen/${project.id}.json`,
-    JSON.stringify(
-      {
-        issue: issue.number,
-        reviews,
-        reactions,
-      },
-      null,
-      2
-    )
-  );
+  console.log(`⭐️ Found ${project.reviews.length} reviews.`);
+  console.log(`👍 Found ${project.reactions.length} reactions.`);
+  console.log(``);
 }
+
+writeFileSync(`./autogen/projects.json`, JSON.stringify(projects, null, 2));
+copyFileSync(`./categories.json`, `./autogen/categories.json`);
+copyFileSync(`./features.json`, `./autogen/features.json`);
