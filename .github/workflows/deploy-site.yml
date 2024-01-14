@@ -1,0 +1,15 @@
+name: Deploy
+
+on:
+  push:
+    branches:    
+      - main
+    paths:
+      - 'autogen/**'
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Deploy to Vercel
+      run: curl https://api.vercel.com/v1/integrations/deploy/prj_C1x7X3WaiOUYCHWuAiwogIPpJYai/1Jsy1M1IgR
