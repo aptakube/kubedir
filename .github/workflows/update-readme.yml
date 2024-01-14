@@ -1,0 +1,26 @@
+name: Update Readme
+
+on:
+  schedule:
+    - cron: '0 * * * *' # Run every hour
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '20'
+
+    - run: node scripts/update-readme.mjs
+
+    - name: Commit and push changes
+      run: |
+        git add .
+        git commit -m "Update README.md"
+        git push

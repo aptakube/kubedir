@@ -2,15 +2,11 @@ import { writeFileSync, readFileSync } from "fs";
 import { gitHubRequest, listProjects } from "./utils.mjs";
 
 async function syncReactions(project) {
-  const content = JSON.parse(
-    readFileSync(`./projects/${project}.json`, { encoding: "utf-8" })
-  );
-
   let reactions = [];
 
-  if (content.issue) {
+  if (project.issue) {
     const allReactions = await gitHubRequest(
-      `/repos/aptakube/kubedir/issues/${content.issue}/reactions`
+      `/repos/aptakube/kubedir/issues/${project.issue}/reactions`
     );
 
     reactions = allReactions.map((r) => ({
@@ -22,7 +18,7 @@ async function syncReactions(project) {
   }
 
   writeFileSync(
-    `./autogen/reactions/${project}.json`,
+    `./autogen/reactions/${project.id}.json`,
     JSON.stringify(reactions, null, 2),
     { encoding: "utf-8" }
   );
@@ -31,15 +27,11 @@ async function syncReactions(project) {
 }
 
 async function syncReviews(project) {
-  const content = JSON.parse(
-    readFileSync(`./projects/${project}.json`, { encoding: "utf-8" })
-  );
-
   let reviews = [];
 
-  if (content.issue) {
+  if (project.issue) {
     const comments = await gitHubRequest(
-      `/repos/aptakube/kubedir/issues/${content.issue}/comments`
+      `/repos/aptakube/kubedir/issues/${project.issue}/comments`
     );
 
     reviews = comments.map((c) => ({
@@ -53,7 +45,7 @@ async function syncReviews(project) {
   }
 
   writeFileSync(
-    `./autogen/reviews/${project}.json`,
+    `./autogen/reviews/${project.id}.json`,
     JSON.stringify(reviews, null, 2),
     { encoding: "utf-8" }
   );
