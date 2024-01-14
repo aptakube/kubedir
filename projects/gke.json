@@ -1,0 +1,15 @@
+{
+  "shortname": "GKE",
+  "name": "Google Kubernetes Engine",
+  "tagline": "The most scalable and fully automated Kubernetes service",
+  "url": "https://cloud.google.com/kubernetes-engine",
+  "logo": "https://seeklogo.com/images/G/google-cloud-logo-ADE788217F-seeklogo.com.png",
+  "category": "managed-kubernetes",
+  "features": {
+    "initial-release": "Nov '15",
+    "max-pods-per-node": "110",
+    "free-control-plane": "✅",
+    "control-plane-sla": "99.95%",
+    "private-cluster": "✅"
+  }
+}

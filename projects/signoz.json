@@ -1,0 +1,19 @@
+{
+  "name": "SigNoz",
+  "tagline": "OpenTelemetry-Native Traces, Metrics, and Logs in a single pane",
+  "url": "https://signoz.io",
+  "logo": "https://signoz.io/img/SigNozLogo-orange.svg",
+  "category": "observability",
+  "features": {
+    "initial-release": "Feb '21",
+    "cncf-stage": "Incubated",
+    "builtin-ui": "✅",
+    "supports-otel": "✅",
+    "backend-storage": "ClickHouse",
+    "observability-traces": "✅",
+    "observability-logs": "✅",
+    "observability-metrics": "✅",
+    "license": "MIT + Enterprise"
+  },
+  "alternatives": ["jaeger", "grafanatempo"]
+}

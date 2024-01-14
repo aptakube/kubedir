@@ -1,0 +1,15 @@
+{
+  "shortname": "EKS",
+  "name": "Elastic Kubernetes Service",
+  "tagline": "The most trusted way to start, run, and scale Kubernetes",
+  "url": "https://aws.amazon.com/eks",
+  "logo": "https://seeklogo.com/images/A/amazon-web-services-aws-logo-6C2E3DCD3E-seeklogo.com.png",
+  "category": "managed-kubernetes",
+  "features": {
+    "initial-release": "Jun '18",
+    "max-pods-per-node": "110",
+    "free-control-plane": "❌",
+    "control-plane-sla": "99.95%",
+    "private-cluster": "✅"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "k9s",
+  "tagline": "Kubernetes CLI To Manage Your Clusters In Style!",
+  "url": "https://github.com/derailed/k9s",
+  "logo": "https://raw.githubusercontent.com/derailed/k9s/master/assets/k9s.png",
+  "category": "desktop-clients",
+  "features": {
+    "interface": "Terminal",
+    "multi-cluster": "❌",
+    "port-foward": "✅",
+    "aggregated-logs": "✅",
+    "open-source": "✅"
+  }
+}

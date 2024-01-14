@@ -1,0 +1,15 @@
+{
+  "shortname": "DOKS",
+  "name": "Digital Ocean Kubernetes",
+  "tagline": "Kubernetes at scale managed for you",
+  "url": "https://www.digitalocean.com/products/kubernetes",
+  "logo": "https://static-00.iconduck.com/assets.00/digitalocean-icon-512x512-1t8a5xew.png",
+  "category": "managed-kubernetes",
+  "features": {
+    "initial-release": "Dec '18",
+    "max-pods-per-node": "110",
+    "free-control-plane": "✅",
+    "control-plane-sla": "99.95%",
+    "private-cluster": "❌"
+  }
+}

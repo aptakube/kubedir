@@ -1,0 +1,15 @@
+{
+  "shortname": "AKS",
+  "name": "Azure Kubernetes Service",
+  "tagline": "Deploy and scale containers on managed Kubernetes by Microsoft",
+  "url": "https://azure.microsoft.com/en-us/services/kubernetes-service",
+  "logo": "https://swimburger.net/media/ppnn3pcl/azure.png",
+  "category": "managed-kubernetes",
+  "features": {
+    "initial-release": "Jun '18",
+    "max-pods-per-node": "250",
+    "free-control-plane": "✅",
+    "control-plane-sla": "99.95%",
+    "private-cluster": "✅"
+  }
+}

@@ -1,0 +1,32 @@
+[
+  {
+    "id": "desktop-clients",
+    "name": "Desktop Clients",
+    "description": "User-friendly interfaces for managing Kubernetes clusters on desktops, providing a graphical way to interact with containerized applications",
+    "emoji": "💻"
+  },
+  {
+    "id": "local-kubernetes",
+    "name": "Local Kubernetes",
+    "description": "Run Kubernetes clusters on your machine for development and testing, simulating a production-like environment locally",
+    "emoji": "🏠"
+  },
+  {
+    "id": "managed-kubernetes",
+    "name": "Managed Kubernetes",
+    "description": "Hassle-free Kubernetes clusters so you can focus on your business, not on managing Kubernetes",
+    "emoji": "⚙️"
+  },
+  {
+    "id": "ingress-controllers",
+    "name": "Ingress Controllers",
+    "description": "Manages external access to services, routing HTTP/S traffic based on rules, simplifying application exposure and scalability.",
+    "emoji": "🚦"
+  },
+  {
+    "id": "observability",
+    "name": "Observability",
+    "description": "Track and understand app performance using metrics, logs, and tracing, providing insights into the health and performance of your apps",
+    "emoji": "🏥"
+  }
+]

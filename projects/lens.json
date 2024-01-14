@@ -1,0 +1,15 @@
+{
+  "name": "Lens",
+  "tagline": "The way the world runs Kubernetes",
+  "url": "https://k8slens.dev",
+  "logo": "https://avatars.githubusercontent.com/u/62133242?s=200&v=4",
+  "category": "desktop-clients",
+  "features": {
+    "interface": "Graphical",
+    "multi-cluster": "❌",
+    "port-foward": "✅",
+    "aggregated-logs": "❌",
+    "open-source": "❌"
+  },
+  "alternatives": ["k9s", "aptakube"]
+}

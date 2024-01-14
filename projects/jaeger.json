@@ -1,0 +1,19 @@
+{
+  "name": "Jaeger",
+  "tagline": "CNCF Jaeger, a Distributed Tracing Platform",
+  "url": "https://www.jaegertracing.io",
+  "logo": "https://avatars.githubusercontent.com/u/28545596?s=200&v=4",
+  "category": "observability",
+  "features": {
+    "initial-release": "Aug '15",
+    "cncf-stage": "Graduated",
+    "builtin-ui": "✅",
+    "supports-otel": "✅",
+    "backend-storage": "In-Memory, Cassandra, Elasticsearch or Kafka",
+    "observability-traces": "✅",
+    "observability-logs": "❌",
+    "observability-metrics": "❌",
+    "license": "Apache-2.0"
+  },
+  "alternatives": ["signoz", "grafanatempo"]
+}

@@ -1,0 +1,69 @@
+{
+  "backend-storage": {
+    "title": "Storage",
+    "description": "Where does the backend store its data?"
+  },
+  "license": {
+    "title": "License"
+  },
+  "cncf-stage": {
+    "title": "CNCF Stage"
+  },
+  "supports-otel": {
+    "title": "OpenTelemetry",
+    "description": "Does it support the OpenTelemetry spec?"
+  },
+  "observability-traces": {
+    "title": "Traces",
+    "description": "Does it process Traces?"
+  },
+  "observability-logs": {
+    "title": "Logs",
+    "description": "Does it process Logs?"
+  },
+  "observability-metrics": {
+    "title": "Metrics",
+    "description": "Does it process Metrics?"
+  },
+  "initial-release": {
+    "title": "Initial Release"
+  },
+  "max-pods-per-node": {
+    "title": "Max Pods per Node",
+    "description": "The maximum number of pods on a worker node"
+  },
+  "free-control-plane": {
+    "title": "Free Control Plane",
+    "description": "Is the control plane free?"
+  },
+  "control-plane-sla": {
+    "title": "Control Plane SLA",
+    "description": "What's the SLA for the managed control plane"
+  },
+  "private-cluster": {
+    "title": "Private Cluster",
+    "description": "Ability to hide the API Server behind a private network"
+  },
+  "interface": {
+    "title": "Interface"
+  },
+  "builtin-ui": {
+    "title": "User Interface",
+    "description": "Does it include a user interface?"
+  },
+  "multi-cluster": {
+    "title": "Multi-Cluster",
+    "description": "Ability to connect to multiple clusters simultaneously"
+  },
+  "port-foward": {
+    "title": "Port Forward",
+    "description": "Ability to port forward to a pod"
+  },
+  "aggregated-logs": {
+    "title": "Aggregated Logs",
+    "description": "View logs from multiple pods at once"
+  },
+  "open-source": {
+    "title": "Open Source"
+  }
+}

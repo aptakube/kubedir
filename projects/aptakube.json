@@ -1,0 +1,15 @@
+{
+  "name": "Aptakube",
+  "tagline": "Modern, lightweight and multi-cluster Kubernetes GUI",
+  "url": "https://aptakube.com",
+  "logo": "https://aptakube.com/apple-touch-icon.png",
+  "category": "desktop-clients",
+  "features": {
+    "interface": "Graphical",
+    "multi-cluster": "✅",
+    "port-foward": "✅",
+    "aggregated-logs": "✅",
+    "open-source": "❌"
+  },
+  "alternatives": ["k9s", "lens"]
+}

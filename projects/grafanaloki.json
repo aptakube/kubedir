@@ -1,0 +1,16 @@
+{
+  "name": "Grafana Loki",
+  "tagline": "Like Prometheus, but for logs",
+  "url": "https://grafana.com/oss/loki",
+  "logo": "https://grafana.com/static/img/logos/logo-loki.svg",
+  "category": "observability",
+  "features": {
+    "builtin-ui": { "value": "❌", "note": "Requires Grafana" },
+    "supports-otel": "✅",
+    "observability-traces": "❌",
+    "observability-logs": "✅",
+    "observability-metrics": "❌",
+    "backend-storage": "S3, GCS or Azure Blob Storage",
+    "license": "AGPL-3.0"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "name": "Grafana Tempo",
+  "tagline": "High volume, minimal dependency distributed tracing backend",
+  "url": "https://grafana.com/oss/tempo",
+  "logo": "https://grafana.com/static/assets/img/logos/grafana-tempo.svg",
+  "issue": "1",
+  "category": "observability",
+  "features": {
+    "initial-release": "Jun '21",
+    "cncf-stage": "—",
+    "builtin-ui": { "value": "❌", "note": "Requires Grafana" },
+    "supports-otel": "✅",
+    "observability-traces": "✅",
+    "observability-logs": "❌",
+    "observability-metrics": "❌",
+    "backend-storage": "S3, GCS or Azure Blob Storage",
+    "license": "AGPL-3.0"
+  },
+  "images": [
+    {
+      "alt": "Traces - Service Graph View using Grafana",
+      "src": "https://raw.githubusercontent.com/grafana/tempo/main/docs/sources/tempo/getting-started/assets/grafana-query.png"
+    },
+    {
+      "alt": "How does Tempo work?",
+      "src": "https://grafana.com/static/img/traces/how-does-tempo-work.png"
+    }
+  ],
+  "alternatives": ["signoz", "jaeger"]
+}
