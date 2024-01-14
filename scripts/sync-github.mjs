@@ -1,4 +1,5 @@
 import { gitHubRequest, listProjects } from "./utils.mjs";
+import { writeFileSync } from "fs";
 
 async function listIssues() {
   const issues = await gitHubRequest(
@@ -78,7 +79,7 @@ for (const project of projects) {
 
 3️⃣ **Found something out-of-date?** Modify [${project.id}.json](https://github.com/aptakube/kubedir/blob/main/projects/${project.id}.json) and send us a PR!
 
-Upvotes and reviews may take up to 24h before showing up on [kubedir.com](https://kubedir.com)
+Upvotes and reviews may take up to 1 hour before showing up on [kubedir.com](https://kubedir.com)
 
 ☸️`;
 
@@ -99,6 +100,18 @@ Upvotes and reviews may take up to 24h before showing up on [kubedir.com](https:
   const reactions = await getReactions(issue.number);
   console.log(`⭐️ Found ${reviews.length} reviews.`);
   console.log(`👍 Found ${reactions.length} reactions.`);
+  console.log(``);
 
-  console.log("");
+  writeFileSync(
+    `./autogen/${project.id}.json`,
+    JSON.stringify(
+      {
+        issue: issue.number,
+        reviews,
+        reactions,
+      },
+      null,
+      2
+    )
+  );
 }
