@@ -3,7 +3,6 @@
   "tagline": "High volume, minimal dependency distributed tracing backend",
   "url": "https://grafana.com/oss/tempo",
   "logo": "https://grafana.com/static/assets/img/logos/grafana-tempo.svg",
-  "issue": "1",
   "category": "observability",
   "features": {
     "initial-release": "Jun '21",

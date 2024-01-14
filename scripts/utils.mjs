@@ -28,8 +28,10 @@ export function listProjects() {
     });
 }
 
-export async function gitHubRequest(path) {
+export async function gitHubRequest(method, path, body) {
   const response = await fetch(`https://api.github.com${path}`, {
+    method,
+    body: body ? JSON.stringify(body) : undefined,
     headers: {
       Authorization: `Bearer ${env("GITHUB_TOKEN")}`,
     },
