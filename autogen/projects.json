@@ -14,9 +14,9 @@
       "control-plane-sla": "99.95%",
       "private-cluster": "✅"
     },
+    "description": "",
     "issue": 2,
     "images": [],
-    "description": "",
     "alternatives": [],
     "reviews": [],
     "reactions": []
@@ -35,10 +35,13 @@
       "aggregated-logs": "✅",
       "open-source": "❌"
     },
-    "alternatives": [],
+    "alternatives": [
+      "k9s",
+      "lens"
+    ],
+    "description": "",
     "issue": 3,
     "images": [],
-    "description": "",
     "reviews": [],
     "reactions": []
   },
@@ -57,9 +60,9 @@
       "control-plane-sla": "99.95%",
       "private-cluster": "❌"
     },
+    "description": "",
     "issue": 4,
     "images": [],
-    "description": "",
     "alternatives": [],
     "reviews": [],
     "reactions": []
@@ -79,9 +82,9 @@
       "control-plane-sla": "99.95%",
       "private-cluster": "✅"
     },
+    "description": "",
     "issue": 5,
     "images": [],
-    "description": "",
     "alternatives": [],
     "reviews": [],
     "reactions": []
@@ -101,9 +104,9 @@
       "control-plane-sla": "99.95%",
       "private-cluster": "✅"
     },
+    "description": "",
     "issue": 6,
     "images": [],
-    "description": "",
     "alternatives": [],
     "reviews": [],
     "reactions": []
@@ -127,9 +130,9 @@
       "backend-storage": "S3, GCS or Azure Blob Storage",
       "license": "AGPL-3.0"
     },
+    "description": "",
     "issue": 7,
     "images": [],
-    "description": "",
     "alternatives": [],
     "reviews": [],
     "reactions": []
@@ -155,10 +158,22 @@
       "backend-storage": "S3, GCS or Azure Blob Storage",
       "license": "AGPL-3.0"
     },
-    "images": [],
-    "alternatives": [],
-    "issue": 1,
+    "images": [
+      {
+        "alt": "Traces - Service Graph View using Grafana",
+        "src": "https://raw.githubusercontent.com/grafana/tempo/main/docs/sources/tempo/getting-started/assets/grafana-query.png"
+      },
+      {
+        "alt": "How does Tempo work?",
+        "src": "https://grafana.com/static/img/traces/how-does-tempo-work.png"
+      }
+    ],
+    "alternatives": [
+      "signoz",
+      "jaeger"
+    ],
     "description": "Grafana Tempo is an open source, easy-to-use and high-scale distributed tracing backend. Tempo is cost-efficient, requiring only object storage to operate, and is deeply integrated with Grafana, Prometheus, and Loki.\n\nTempo is Jaeger, Zipkin, Kafka, OpenCensus and OpenTelemetry compatible. It ingests batches in any of the mentioned formats, buffers them and then writes them to Azure, GCS, S3 or local disk. As such it is robust, cheap and easy to operate!\n\nTempo implements TraceQL, a traces-first query language inspired by LogQL and PromQL. This query language allows users to very precisely and easily select spans and jump directly to the spans fulfilling the specified conditions.\n",
+    "issue": 1,
     "reviews": [
       {
         "login": "goenning",
@@ -204,10 +219,13 @@
       "observability-metrics": "❌",
       "license": "Apache-2.0"
     },
-    "alternatives": [],
+    "alternatives": [
+      "signoz",
+      "grafanatempo"
+    ],
+    "description": "",
     "issue": 8,
     "images": [],
-    "description": "",
     "reviews": [],
     "reactions": []
   },
@@ -225,9 +243,9 @@
       "aggregated-logs": "✅",
       "open-source": "✅"
     },
+    "description": "",
     "issue": 9,
     "images": [],
-    "description": "",
     "alternatives": [],
     "reviews": [],
     "reactions": []
@@ -246,10 +264,13 @@
       "aggregated-logs": "❌",
       "open-source": "❌"
     },
-    "alternatives": [],
+    "alternatives": [
+      "k9s",
+      "aptakube"
+    ],
+    "description": "",
     "issue": 10,
     "images": [],
-    "description": "",
     "reviews": [],
     "reactions": []
   },
@@ -271,10 +292,13 @@
       "observability-metrics": "✅",
       "license": "MIT + Enterprise"
     },
-    "alternatives": [],
+    "alternatives": [
+      "jaeger",
+      "grafanatempo"
+    ],
+    "description": "",
     "issue": 11,
     "images": [],
-    "description": "",
     "reviews": [],
     "reactions": []
   }
