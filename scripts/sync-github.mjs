@@ -96,14 +96,15 @@ Upvotes and reviews may take up to 1 hour before showing up on [kubedir.com](htt
     console.log(`✅ Created issue #${issue.number}`);
   }
 
-  project.issue = issue.number;
-  project.images = issue.images || [];
   if (existsSync(`./projects/${project.id}.md`)) {
     project.description = readFileSync(`./projects/${project.id}.md`, "utf8");
   } else {
     project.description = "";
   }
-  project.alternatives = issue.alternatives || [];
+
+  project.issue = issue.number;
+  project.images = project.images || [];
+  project.alternatives = project.alternatives || [];
   project.reviews = await getReviews(issue.number);
   project.reactions = await getReactions(issue.number);
 
