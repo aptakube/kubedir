@@ -24,11 +24,12 @@ async function createIssue(title, body) {
   return issue;
 }
 
-async function updateIssueBody(issueNumber, body) {
+async function updateIssueBody(issueNumber, title, body) {
   const issue = await gitHubRequest(
     "PATCH",
     `/repos/aptakube/kubedir/issues/${issueNumber}`,
     {
+      title,
       body,
     }
   );
@@ -71,7 +72,8 @@ const projects = listProjects();
 for (const project of projects) {
   console.log(`Processing ${project.name}.`);
 
-  const issueBody = `Project: ${project.url}
+  const issueBody = `ID: ${project.id}
+Project: ${project.url}
 
 1️⃣ **Like this project?** Upvote this issue with a 👍 reaction
 
@@ -83,11 +85,11 @@ Upvotes and reviews may take up to 1 hour before showing up on [kubedir.com](htt
 
 ☸️`;
 
-  let issue = issues.find((i) => i.title === project.name);
+  let issue = issues.find((i) => i.body.startsWith(`ID: ${project.id}`));
   if (issue) {
-    if (issue.body !== issueBody) {
+    if (issue.body !== issueBody || issue.title !== project.name) {
       console.log(`❌ Issue is out-of-date, updating...`);
-      await updateIssueBody(issue.number, issueBody);
+      await updateIssueBody(issue.number, project.name, issueBody);
       console.log(`✅ Updated issue #${issue.number}`);
     }
   } else {
