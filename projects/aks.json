@@ -11,5 +11,6 @@
     "free-control-plane": "✅",
     "control-plane-sla": "99.95%",
     "private-cluster": "✅"
-  }
+  },
+  "alternatives": ["gke", "doks", "eks"]
 }
